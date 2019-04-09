@@ -31,7 +31,11 @@ TARGET_SCREEN_HEIGHT := 1920
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := montana
 PRODUCT_NAME := lineage_montana
-PRODUCT_MODEL := Moto G5s
+PRODUCT_MODEL := Moto G5S
 PRODUCT_BRAND := Motorola
 PRODUCT_MANUFACTURER := Motorola
 PRODUCT_RELEASE_NAME := montana
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    BUILD_FINGERPRINT=7.1.1/NPP26.102-19/22:user/release-keys \
+    PRIVATE_BUILD_DESC="7.1.1/NPP26.102-19/22:user/release-keys"
