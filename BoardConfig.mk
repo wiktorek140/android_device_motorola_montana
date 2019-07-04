@@ -220,6 +220,9 @@ PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH)/libhidl \
     $(DEVICE_PATH)/libshims
 
+# System-as-root
+BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
+
 # Thermal
 USE_DEVICE_SPECIFIC_THERMAL := true
 
