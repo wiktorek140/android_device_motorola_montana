@@ -65,7 +65,8 @@ PRODUCT_COPY_FILES += \
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
-    init.mmi_device.rc
+    init.mmi_device.rc \
+    init.msm.usb.configfs.rc
 
 # Sensors
 PRODUCT_PACKAGES += \
