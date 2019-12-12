@@ -15,8 +15,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-TARGET_KERNEL_VERSION := 4.9
-
 # Inherit from msm8937-common
 include device/motorola/msm8937-common/BoardConfigCommon.mk
 
@@ -42,6 +40,7 @@ BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_CMDLINE += androidboot.usbconfigfs=true loop.max_part=7
 BOARD_KERNEL_LZ4C_DT := true
 TARGET_KERNEL_CONFIG := montana_defconfig
+TARGET_KERNEL_VERSION := 4.9
 
 # NFC
 NXP_CHIP_TYPE := pn544
