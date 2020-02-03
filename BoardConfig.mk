@@ -4,16 +4,17 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+
 # Treble
 PRODUCT_FULL_TREBLE_OVERRIDE := true
 
 # Inherit from msm8937-common
--include device/motorola/msm8937-common/BoardConfigCommon.mk
+-include device/motorola/msm8937-common_49/BoardConfigCommon.mk
 
-DEVICE_PATH := device/motorola/montana
+DEVICE_PATH := device/motorola/montana_49
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := montana
+TARGET_OTA_ASSERT_DEVICE := montana,montana_49
 
 # Camera
 TARGET_PROCESS_SDK_VERSION_OVERRIDE := \
