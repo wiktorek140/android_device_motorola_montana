@@ -19,7 +19,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from montana device
-$(call inherit-product, device/motorola/montana/device.mk)
+$(call inherit-product, device/motorola/montana_49/device.mk)
 $(call inherit-product, vendor/motorola/montana/montana-vendor.mk)
 
 # Inherit from the common LineageOS configuration.
@@ -38,9 +38,9 @@ TARGET_SCREEN_WIDTH := 1080
 TARGET_SCREEN_HEIGHT := 1920
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := lineage_montana
+PRODUCT_NAME := lineage_montana_49
 PRODUCT_BRAND := motorola
-PRODUCT_DEVICE := montana
+PRODUCT_DEVICE := montana_49
 PRODUCT_MODEL := Moto G5S
 PRODUCT_MANUFACTURER := motorola
 

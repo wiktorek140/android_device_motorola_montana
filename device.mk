@@ -16,10 +16,10 @@
 # limitations under the License.
 
 # Inherit from msm8937-common
-$(call inherit-product, device/motorola/msm8937-common/msm8937.mk)
+$(call inherit-product, device/motorola/msm8937-common_49/msm8937.mk)
 
 # Properties
-$(call inherit-product, device/motorola/montana/vendor_prop.mk)
+$(call inherit-product, device/motorola/montana_49/vendor_prop.mk)
 
 # Audio
 PRODUCT_COPY_FILES +=  \

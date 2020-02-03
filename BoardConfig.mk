@@ -16,16 +16,16 @@
 # limitations under the License.
 
 # Inherit from msm8937-common
-include device/motorola/msm8937-common/BoardConfigCommon.mk
+include device/motorola/msm8937-common_49/BoardConfigCommon.mk
 
 # Inherit from the proprietary version
 -include vendor/motorola/montana/BoardConfigVendor.mk
 
-DEVICE_PATH := device/motorola/montana
+DEVICE_PATH := device/motorola/montana_49
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # Asserts
-TARGET_OTA_ASSERT_DEVICE := montana,montana_retail
+TARGET_OTA_ASSERT_DEVICE := montana,montana_retail,montana_49
 
 # Board
 TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
