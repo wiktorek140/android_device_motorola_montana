@@ -5,7 +5,7 @@
 #
 
 # Inherit from msm8937-common
-$(call inherit-product, device/motorola/msm8937-common/msm8937.mk)
+$(call inherit-product, device/motorola/msm8937-common_49/msm8937.mk)
 
 # Get non-open-source specific aspects
 $(call inherit-product-if-exists, vendor/motorola/montana/montana-vendor.mk)
