@@ -62,5 +62,8 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 # SELinux
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
+# Sensor multi HAL
+USE_SENSOR_MULTI_HAL := true
+
 # Vendor security patch
 VENDOR_SECURITY_PATCH := 2019-08-01
