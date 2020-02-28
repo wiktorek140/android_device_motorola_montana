@@ -27,6 +27,9 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 TARGET_KERNEL_CONFIG := montana_defconfig
 
+# Metadata for 4.9
+BOARD_USES_METADATA_PARTITION := true
+
 # NFC
 NXP_CHIP_TYPE := pn554
 BOARD_NFC_HAL_SUFFIX := $(TARGET_BOARD_PLATFORM)
