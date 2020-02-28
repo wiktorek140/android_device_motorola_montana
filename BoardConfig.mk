@@ -50,3 +50,6 @@ BOARD_KERNEL_CMDLINE += dm=\"system none ro,0 1 android-verity /dev/mmcblk0p53\"
 
 # Inherit from the proprietary version
 -include vendor/motorola/montana/BoardConfigVendor.mk
+
+# Sensor multi HAL
+USE_SENSOR_MULTI_HAL := true
