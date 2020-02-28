@@ -47,3 +47,6 @@ BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
 # Inherit from the proprietary version
 -include vendor/motorola/montana/BoardConfigVendor.mk
+
+# Sensor multi HAL
+USE_SENSOR_MULTI_HAL := true
