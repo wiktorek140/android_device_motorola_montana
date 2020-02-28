@@ -25,7 +25,9 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # Kernel
 TARGET_KERNEL_CONFIG := montana_defconfig
+BOARD_KERNEL_CMDLINE += earlycon=msm_serial_dm,0x78B0000 androidboot.selinux=permissive
 BOARD_KERNEL_CMDLINE += dm=\"system none ro,0 1 android-verity /dev/mmcblk0p53\"
+BOARD_KERNEL_LZ4C_DT := true
 
 # Metadata for 4.9
 BOARD_USES_METADATA_PARTITION := true
