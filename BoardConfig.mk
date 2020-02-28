@@ -42,6 +42,9 @@ BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_LZ4C_DT := true
 TARGET_KERNEL_CONFIG := montana_defconfig
 
+# Metadata for 4.9
+BOARD_USES_METADATA_PARTITION := true
+
 # NFC
 NXP_CHIP_TYPE := pn544
 BOARD_NFC_HAL_SUFFIX := $(TARGET_BOARD_PLATFORM)
