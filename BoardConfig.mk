@@ -24,7 +24,8 @@ TARGET_PROCESS_SDK_VERSION_OVERRIDE := \
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # Kernel
-BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE += earlycon=msm_serial_dm,0x78B0000 androidboot.selinux=permissive
+BOARD_KERNEL_LZ4C_DT := true
 TARGET_KERNEL_CONFIG := montana_defconfig
 
 # Metadata for 4.9
