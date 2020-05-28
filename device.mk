@@ -89,3 +89,9 @@ PRODUCT_COPY_FILES += \
 # Touch
 PRODUCT_PACKAGES += \
     vendor.lineage.touch@1.0-service.msm8937
+
+# Debug stuff
+PRODUCT_PACKAGES += \
+    tinymix \
+	vintf
+
