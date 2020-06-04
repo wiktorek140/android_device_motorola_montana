@@ -23,6 +23,7 @@ TARGET_PROCESS_SDK_VERSION_OVERRIDE := \
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # Kernel
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 TARGET_KERNEL_CONFIG := montana_defconfig
 
 # NFC
