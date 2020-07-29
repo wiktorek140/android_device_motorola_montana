@@ -9,7 +9,7 @@ on boot
 
 on init
     # Set Hardware properties
-    setprop ro.product.model ${ro.boot.hardware.sku}
+    setprop ro.product.model "Moto G5S (${ro.boot.hardware.sku})"
     setprop ro.product.name montana
 
     # Variant properties

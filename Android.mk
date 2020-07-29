@@ -13,9 +13,10 @@
 # *not* include it on all devices, so it is safe even with hardware-specific
 # components.
 
+ifneq ($(filter montana,$(TARGET_DEVICE)),)
+
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),montana)
   subdir_makefiles=$(call first-makefiles-under,$(LOCAL_PATH))
   $(foreach mk,$(subdir_makefiles),$(info including $(mk) ...)$(eval include $(mk)))
 
