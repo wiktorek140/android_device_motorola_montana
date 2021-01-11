@@ -27,6 +27,9 @@ BOARD_DTBTOOL_ARGS := --force-v3 --motorola 1
 TARGET_KERNEL_CONFIG := montana_defconfig
 BOARD_KERNEL_CMDLINE += earlycon=msm_serial_dm,0x78B0000 androidboot.selinux=permissive
 
+# Metadata for 4.9
+BOARD_USES_METADATA_PARTITION := true
+
 # NFC
 NXP_CHIP_TYPE := pn554
 ODM_MANIFEST_SKUS += n
