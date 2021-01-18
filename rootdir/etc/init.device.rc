@@ -9,6 +9,23 @@ on init && property:ro.boot.hardware.sku=XT1799-2
     mount none /vendor/etc/libnfc-nxp_retcn.conf /vendor/etc/libnfc-nxp.conf bind
     mount none /vendor/etc/thermal-engine-retcn.conf /vendor/etc/thermal-engine.conf bind
 
+on init
+    setprop ro.vendor.fsg-id ${ro.boot.fsg-id}
+    setprop ro.vendor.hw.dualsim ${ro.boot.dualsim}
+    setprop ro.vendor.hw.device ${ro.boot.device}
+    setprop ro.vendor.hw.radio ${ro.boot.radio}
+    setprop ro.vendor.hw.hwrev ${ro.boot.hwrev}
+    setprop ro.vendor.hw.revision ${ro.boot.revision}
+    setprop ro.vendor.carrier ${ro.boot.carrier}
+    setprop ro.vendor.boot.cid ${ro.boot.cid}
+    setprop ro.vendor.boot.radio ${ro.boot.radio}
+    setprop ro.vendor.boot.hwrev ${ro.boot.hwrev}
+    setprop ro.vendor.boot.powerup_reason ${ro.boot.powerup_reason}
+    setprop ro.vendor.boot.bl_state ${ro.boot.bl_state}
+    setprop ro.vendor.boot.serialno ${ro.boot.serialno}
+    setprop ro.vendor.zygote ${ro.zygote}
+    setprop ro.product.manufacturer Motorola
+
 on boot
     # Change permission for fingerprint sensor
     chown system oem_5004 /sys/bus/spi/devices/spi1.0/nav
