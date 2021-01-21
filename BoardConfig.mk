@@ -47,5 +47,8 @@ VENDOR_SECURITY_PATCH := 2019-08-01
 # SELinux
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
+# Sensor multi HAL
+USE_SENSOR_MULTI_HAL := true
+
 # Inherit from the proprietary version
 -include vendor/motorola/montana/BoardConfigVendor.mk
