@@ -7,6 +7,8 @@
 # Treble
 PRODUCT_FULL_TREBLE_OVERRIDE := true
 
+BOARD_VENDOR := motorola-qcom
+
 # Inherit from msm8937-common
 -include device/motorola/msm8937-common/BoardConfigCommon.mk
 
